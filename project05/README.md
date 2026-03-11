@@ -1,5 +1,5 @@
 # Introduction
-The aim of this project was to create an algorithm to implement pairwise alignment. This program uses the Smith-Waterman method for local alignment. The program takes in two sequences and finds the best local alignments between the two sequences. 
+The aim of this project was to create an algorithm to implement pairwise alignment. This program uses the Smith-Waterman method for local alignment. The program takes in two sequences and finds the best local alignments between the two sequences. The process of sequence alignment becomes too complex if you try to naively make every comparison between two sequences. Dynamic programming implementation breaks alignment in to smaller sub-problems and reduces the time-complexity of alignment.
 
 # Pseudocode
 
@@ -82,7 +82,7 @@ Our group had great success from a productive psuedocode session. Due to this, w
 # Struggles
 Description of the stumbling blocks the team experienced
 
-We did have a few stumbles around the indexing, where we needed extra examples to test various correct alignment possibilities to debug.
+We did have a few stumbles around the indexing, where we needed extra examples to test various correct alignment possibilities to debug. Making sure we had enough positions in the matrices was crucial. Initially we were constructing a matrix with the length of the rows and columns being equal to the length of the sequences. We had to adjust this and add one extra row and column to represent our initial diagonal state.
 
 
 
@@ -93,7 +93,7 @@ We did have a few stumbles around the indexing, where we needed extra examples t
 Group leader's reflection on the project
 
 ## Connor Crawford
-Other members' reflections on the project
+The scale of the data definitely made the project smoother this week. Especially when it came to debugging, when I ran into stumbling blocks it was much easier to figure out what was going wrong in my code. Spending a couple hours with my other group members making the pseudocode made implementation very smooth.
 
 ## Victoria Van Berlo
 This week's project was made a lot easier by having great pseudocode. I feel like I'm getting better at the planning phase. This is one of the most tangibly-understandable projects for me, so I felt pretty confident about our implementation.
