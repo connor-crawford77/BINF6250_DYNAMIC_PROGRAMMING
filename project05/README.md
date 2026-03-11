@@ -5,7 +5,7 @@ The aim of this project was to create an algorithm to implement pairwise alignme
 
 ```
 Make two matrices, read in 2 seqs, scores 
- 
+
 
 Starting at i=1, j=1, iterate over matrix to len(seq1), len(seq2): 
 
@@ -72,26 +72,18 @@ Print scoring matrix
 Print max score if we want because we already know it we just need to pass it back from smithwaterman 
 ```
 
-
-
-
 # Successes
 Our group had great success from a productive psuedocode session. Due to this, we all felt comfortable with the implementation step. Being able to visualize the algorithm flow and having only two sequences at a time helped wrapping our brains around things.
 
-
 # Struggles
-Description of the stumbling blocks the team experienced
-
-We did have a few stumbles around the indexing, where we needed extra examples to test various correct alignment possibilities to debug. Making sure we had enough positions in the matrices was crucial. Initially we were constructing a matrix with the length of the rows and columns being equal to the length of the sequences. We had to adjust this and add one extra row and column to represent our initial diagonal state.
-
-
+We did have a few stumbles around the indexing, where we needed extra examples to test various correct alignment possibilities to debug. Making sure we had enough positions in the matrices was crucial. Initially we were constructing a matrix with the length of the rows and columns being equal to the length of the sequences. We had to adjust this and add one extra row and column to represent our initial diagonal state. We also had to be careful when accessing neighboring cells (diagonal, up, and left) to ensure we were referencing the correct positions in the matrix.
 
 # Personal Reflections
 ## Group Leader
 ## Aaronie Jersha Jenyfred
+A lot of our progress came from the pseudocode discussions we had together as a group. Having previously studied some of these concepts in genomics helped me frame the logic behind the core parts of the alignment algorithm. Compared to some of the earlier projects, this one felt less intense, which gave me more time to experiment with the code and understand how each function interacted with the others.
 
-Group leader's reflection on the project
-
+## Group members
 ## Connor Crawford
 The scale of the data definitely made the project smoother this week. Especially when it came to debugging, when I ran into stumbling blocks it was much easier to figure out what was going wrong in my code. Spending a couple hours with my other group members making the pseudocode made implementation very smooth.
 
